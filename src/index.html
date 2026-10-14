@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Traductor Morse</title>
+</head>
+<body>
+  <main class="card">
+    <h1>Traductor Morse</h1>
+    <div class="modes" role="group" aria-label="Tipo de conversión">
+      <button id="btn-t2m" class="mode active" type="button">Texto → Morse</button>
+      <button id="btn-m2t" class="mode" type="button">Morse → Texto</button>
+    </div>
+
+    <label id="label-in" for="input">Texto</label>
+    <textarea id="input" rows="5" placeholder="Escribe aquí..."></textarea>
+
+    <p id="error" class="error" role="alert" hidden></p>
+
+    <div class="actions">
+      <button id="btn-convert" type="button" class="primary">Convertir</button>
+      <button id="btn-swap" type="button">⇅ Intercambiar</button>
+      <button id="btn-clear" type="button">Limpiar</button>
+    </div>
+
+    <label id="label-out" for="output">Resultado (Morse)</label>
+    <textarea id="output" rows="5" readonly></textarea>
+    <button id="btn-copy" type="button">Copiar resultado</button>
+    <p class="hint">Usa «.» y «-» para cada letra, espacio entre letras y «/» entre palabras.</p>
+  </main>
+</body>
+</html>
